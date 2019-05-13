@@ -107,9 +107,85 @@
             <a class="btn" href="#">Описание</a>
             <a class="btn" href="#">Купить</a>
         </div>
-
     </div>
+
+    <h2>Прайс-лист на услуги</h2>
+    <table class="price-list">
+        <tr>
+            <th class="price-number">№</th>
+            <th>Название услуги</th>
+            <th>Кто оказывает</th>
+            <th>Сколько стоит</th>
+        </tr>
+        <tr>
+            <td class="price-number">1.</td>
+            <td class="price-name">Стрижка</td>
+            <td>Грумер</td>
+            <td>500 руб.</td>
+        </tr>
+        <tr>
+            <td class="price-number">2.</td>
+            <td class="price-name">Заточка когтей</td>
+            <td>Грумер</td>
+            <td>300 руб.</td>
+        </tr>
+        <tr>
+            <td class="price-number">3.</td>
+            <td class="price-name">Накрутка усов</td>
+            <td>Грумер</td>
+            <td>100 руб.</td>
+        </tr>
+        <tr>
+            <td class="price-number">4.</td>
+            <td class="price-name">Подбор аксессуаров</td>
+            <td>Стилист</td>
+            <td>1550 руб.</td>
+        </tr>
+    </table>
 </div>
+    <div class="feedback">
+    <h2>Остались вопросы?</h2>
+    <p class="feedback-tip">Свяжитесь с нами, и мы развеем оставшиеся у вас сомнения!</p>
+
+        <form class="feedback-form" action="/keksby-mail" method="post">
+            <div class="feedback-form-group">
+                <label for="fullname">Представьтесь, пожалуйста:</label>
+                <input type="text" name="fullname" id="fullname">
+            </div>
+            <div class="feedback-form-group">
+                <label for="phone">Контактный телефон:</label>
+                <input type="text" name="phone" id="phone">
+            </div>
+
+            <div class="feedback-form-group">
+                <label for="email">Электронная почта:</label>
+                <input type="text" name="email" id="email">
+            </div>
+            <div class="checkbox-area">
+                <label>
+                    <input type="checkbox" name="subscription">
+                    Я согласен получать спам и смс на телефон
+                </label>
+            </div>
+
+            <div class="feedback-form-group">
+                <label for="topic">Тема обращения:</label>
+                <select name="topic" id="topic">
+                    <option value="1">Условия доставки</option>
+                    <option value="2">Возврат товара</option>
+                    <option value="3">Жалоба в Роспотребнадзор</option>
+                </select>
+            </div>
+
+            <div class="feedback-form-group">
+                <label for="message">Текст обращения:</label>
+                <textarea name="message" id="message">
+
+            </textarea>
+            </div>
+            <input type="submit" class="btn" value="Отправить">
+        </form>
+    </div>
 
 <div class="page-footer">
     <div class="footer-top">
