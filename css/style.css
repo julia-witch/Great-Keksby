@@ -1,3 +1,5 @@
+/*Основные стили*/
+
 body{
 
     margin: 0;
@@ -41,6 +43,7 @@ body{
 }
 
 /*Стили кнопок*/
+
 .btn{
     color: #a38b70;
     text-decoration: none;
@@ -54,19 +57,135 @@ body{
     color: rgba(141, 116, 90, 0.3);
 }
 
+/*Стили promo в хедере*/
+
+.promo {
+    font-family: 'Georgia', serif;
+    font-size: 45pt;
+    font-weight: bold;
+    line-height: 55pt;
+    text-align: center;
+}
+
+.promo a{
+    color: #fff;
+    text-decoration: none;
+}
+
+/*Стили преимуществ*/
+
+.features ul {
+    list-style: none;
+}
+
+.feature-item {
+    text-align: center;
+    border-left: 1px solid #d9d9d9;
+}
+
+.feature-item:first-child {
+    border-left: none;
+}
+
+.feature-item p {
+    font-size: 16px;
+}
+
+.feature-title {
+    font-family:"Georgia", serif;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    color:#a38b70;
+}
+
+/*Стили раздела "Немного теории"*/
+
+.cat-reference{
+    background-color:#f2f2f2;
+}
+
+.cat-reference dd{
+    font-size: 16px;
+}
+
+.cat-reference dd img{
+    border-radius: 5px;
+}
+
+.section-title{
+    font-family: "Georgia", serif;
+    font-weight: bold;
+    font-size: 45px;
+    line-height: 55px;
+    color:#a38b70;
+}
+
+.reference-title {
+    font-size: 24px;
+}
+
+.reference-source {
+    font-style: italic;
+    font-size: 16px;
+    color:#666666;
+}
+
+.reference-source a {
+    color:#a38b70;
+}
+
+.reference-source a:hover {
+    color:#8d745a;
+}
+
+.reference-source a:active {
+    color:rgba(141, 116, 90, 0.3);
+}
+
+/*Стили раздела "Довольные коты"*/
+
+.review-item {
+    font-size: 16px;
+    border-left: 3px solid #a38b70;
+}
+
+.review-author {
+    font-weight: bold;
+    font-style: italic;
+}
+
+/*Стили раздела "Популярные товары"*/
+
+.popular-and-price{
+    background-color:#f2f2f2;
+}
+.catalog-item{
+    font-size: 16px;
+}
+
+.catalog-item h3{
+    font-size: 16px;
+    color:#000000;
+}
+
 /*Стили прайса*/
+
 .price-list {
+    line-height: 30px;
     width: 100%;
     border-collapse: collapse;
 }
 
 .price-list th {
+    font-size:14px;
+    text-transform: uppercase;
     font-weight: normal;
     text-align: left;
 }
 
 .price-list td {
-    border: 1px solid #333333;
+    border: 1px solid #d8d8d8;
 }
 
 .price-list th,
@@ -80,8 +199,119 @@ body{
 
 .price-list .price-name {
     font-weight: bold;
+    color: #000;
+}
+
+/*Форма обратной связи*/
+
+
+.feedback-tip {
+    font-size: 16px;
 }
 
 .feedback-form-group {
     padding: 10px 0;
+}
+
+.feedback-form-group label {
+    font-size: 12px;
+    text-transform: uppercase;
+}
+
+.feedback-form input[type="text"],
+.feedback-form select,
+.feedback-form textarea {
+    font: inherit;
+    color: inherit;
+    border: 2px solid #d5d5d5;
+}
+
+.feedback-form input[type="text"]:hover,
+.feedback-form select:hover,
+.feedback-form textarea:hover {
+    border-color: #bebebe;
+}
+
+.feedback-form input[type="text"]:focus,
+.feedback-form select:focus,
+.feedback-form textarea:focus {
+    border-color: #8d745a;
+}
+
+.checkbox-area{
+    border-bottom: 1px solid #d5d5d5;
+}
+
+
+/*Стили футера*/
+
+.page-footer {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #363636;
+    color: #c3c3c3;
+}
+.footer-middle, .footer-bottom {
+    border-top: 1px solid #5e5e5e;
+}
+
+.footer-menu ul {
+    list-style: none;
+}
+
+.footer-menu h3 {
+    font-weight: bold;
+    font-size: 24px;
+    font-family: "Georgia", serif;
+    color: #a38b70;
+}
+
+.footer-menu a {
+    font-size: 16px;
+    color: #c3c3c3;
+    text-decoration: none;
+}
+
+.footer-menu a:hover {
+    color: #ffffff;
+}
+
+.footer-menu a:active {
+    color: rgba(255, 255, 255, 0.3);
+}
+
+/*Соцсети*/
+
+.footer-social {
+    font-family: "Georgia", serif;
+    font-size: 24px;
+    color: #a38b70;
+}
+
+.footer-social b {
+    font-size: 24px;
+    font-family: "Georgia", serif;
+    color: #a38b70;
+}
+
+.footer-copyright {
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.footer-copyright a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-copyright a:hover {
+    text-decoration: underline;
+}
+
+.footer-copyright a:active{
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.social-btn {
+    color:#ffffff;
 }
